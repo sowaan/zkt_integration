@@ -96,7 +96,7 @@ def get_zkt_log(setting):
 				}).insert()
 		if last_punch_time:
 			last_punch_datetime = datetime.strptime(last_punch_time, "%Y-%m-%d %H:%M:%S")
-			new_end_time = last_punch_datetime + timedelta(days=10)
+			new_end_time = last_punch_datetime + timedelta(days=1)
 			new_end_time_str = new_end_time.strftime("%Y-%m-%d %H:%M:%S")
 			
 			frappe.db.set_value("ZKT Setting", setting.get("name"), "start_time", last_punch_time)

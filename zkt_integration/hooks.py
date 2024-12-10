@@ -148,23 +148,23 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"zkt_integration.tasks.all"
 # 	],
 # 	"daily": [
 # 		"zkt_integration.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"zkt_integration.tasks.hourly"
-# 	],
+	"hourly": [
+		"zkt_integration.zkt_integration.doctype.zkt_setting.zkt_setting.get_zkt_log_scheduler"
+	],
 # 	"weekly": [
 # 		"zkt_integration.tasks.weekly"
 # 	],
 # 	"monthly": [
 # 		"zkt_integration.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------
